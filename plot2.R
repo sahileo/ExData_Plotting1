@@ -2,7 +2,7 @@
 #PROJECT 1:
 #Assignment 2:
 
-setwd("C:\\Users\\Sahil\\Desktop\\Coursera_EDA")
+setwd(".\Coursera_EDA")
 
 #Import data
   data <- read.csv("household_power_consumption.txt",header=TRUE,sep=";", stringsAsFactors = FALSE)

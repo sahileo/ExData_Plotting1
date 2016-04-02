@@ -2,7 +2,7 @@
 #PROJECT 1:
 #Assignment 1:
 
-setwd("C:\\Users\\Sahil\\Desktop\\Coursera_EDA")
+setwd(".\Coursera_EDA")
 
 #Import data
   data <- read.csv("household_power_consumption.txt",header=TRUE,sep=";", stringsAsFactors = FALSE)
@@ -19,6 +19,6 @@ setwd("C:\\Users\\Sahil\\Desktop\\Coursera_EDA")
   data$Global_active_power <- as.numeric(data$Global_active_power)
   class(data$Global_active_power) #Numeric
 #Plot and save as png file
-  hist(data$Global_active_power, col="red", main = "Global Active Power", ylab="Frequncy",xlab="Global Active Power (kilowatts)")
+  hist(data$Global_active_power, col="red", main = "Global Active Power", ylab="Frequency",xlab="Global Active Power (kilowatts)")
   dev.copy(png, "plot1.png", width=480, height=480)
   dev.off()
